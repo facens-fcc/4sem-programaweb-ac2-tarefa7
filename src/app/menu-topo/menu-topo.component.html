@@ -9,12 +9,8 @@
 
         <ul class="nav nav-pills" *ngIf="estaAutenticado">
             <li *ngFor="let item of menus" class="nav-item">
-                <a [routerLink]="[item.rota]" 
+                <a [routerLink]="[item.rota]"
         routerLinkActive="active"  class="nav-link">{{item.titulo}}</a>
-            </li>
-            <li class="nav-item">
-                <a [routerLink]="['/calculadora2',1,2]" routerLinkActive="active"
-                     class="nav-link">Rota com Param.</a>
             </li>
         </ul>
     </header>
